@@ -8,37 +8,23 @@
 
 ---
 
-## Table of Contents
-
-- [About](#about)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Examples](#examples)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
-
----
-
 ## About
 
 **SIMUnet_CLEW** is a project focused on incorporating low-energy observables into SIMUnet.  
-*(Add a more detailed description of what your project does, its goals, and its significance here.)*
+Here we briefly describe what's going on in Tom's low-energy YAML files.
 
 ---
 
-## Features
+## Details
 
-- **Feature 1**: *(Describe the feature briefly)*
-- **Feature 2**: *(Describe the feature briefly)*
-- **Feature 3**: *(Describe the feature briefly)*
+- **EFT_LO: SM**: *(The SM predictions have been normalised to 1)*
+- **SM_fixed**: *(These numbers are experimental central values divided by their normalised SM predictions)*
+- **theory_cov**: *(This is the experimental covariance matrix)*
 
 ---
 
-## Installation
+## Exceptions
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/tomtong2015/SIMUnet_CLEW.git
-   cd SIMUnet_CLEW
+- **SIMU_MESON_2.yaml**: *(The SM predictions have **NOT** been normalised)*
+
+---
