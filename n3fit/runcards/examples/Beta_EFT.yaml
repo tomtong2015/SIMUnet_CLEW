@@ -133,8 +133,8 @@ dataset_inputs:
 # - {dataset: CMS_SINGLETOPW_13TEV_TOTAL, simu_fac: "EFT_NLO"}
 # - {dataset: CMS_SINGLETOPW_13TEV_SLEP_TOTAL, simu_fac: "EFT_NLO"}
 # Whel
-- {dataset: ATLAS_WHEL_13TEV, simu_fac: "EFT_NLO", use_fixed_predictions: True}
-- {dataset: ATLAS_CMS_WHEL_8TEV, simu_fac: "EFT_NLO", use_fixed_predictions: True}
+# - {dataset: ATLAS_WHEL_13TEV, simu_fac: "EFT_NLO", use_fixed_predictions: True}
+# - {dataset: ATLAS_CMS_WHEL_8TEV, simu_fac: "EFT_NLO", use_fixed_predictions: True}
 # # ttgamma
 # - {dataset: ATLAS_TTBARGAMMA_8TEV_TOTAL, simu_fac: "EFT_LO", use_fixed_predictions: True}
 # - {dataset: CMS_TTBARGAMMA_8TEV_TOTAL, simu_fac: "EFT_LO", use_fixed_predictions: True}
