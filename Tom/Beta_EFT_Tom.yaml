@@ -172,7 +172,7 @@ dataset_inputs:
 - {dataset: CMS_WZ_13TEV_2016_PTZ, simu_fac: "EFT_NLO", use_fixed_predictions: True}
 - {dataset: ATLAS_ZJJ_13TEV_2016, simu_fac: "EFT_LO", use_fixed_predictions: True}
 # Beta Decay
-- {dataset: BETA_DECAYS_Beta_Decay_Obs, simu_fac: "EFT_LO",use_fixed_predictions: True} #Fixed Predictions: no PDFs
+- {dataset: BETA_DECAY_OBS, simu_fac: "EFT_LO",use_fixed_predictions: True} #Fixed Predictions: no PDFs
 
 fixed_pdf_fit: True
 load_weights_from_fit: 221103-jmm-no_top_1000_iterated # If this is uncommented, training starts here.
