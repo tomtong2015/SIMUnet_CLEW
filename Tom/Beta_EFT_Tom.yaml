@@ -61,11 +61,11 @@ dataset_inputs:
 - {dataset: LHCB_Z_13TEV_DIMUON, frac: 0.75, cfac: [QCD]}
 - {dataset: LHCB_Z_13TEV_DIELECTRON, frac: 0.75, cfac: [QCD]}
 # Drell - Yan
-- {dataset: ATLASDY2D8TEV, cfac: [QCDEWK]}
-- {dataset: CMSDY2D11, cfac: [QCD]}
-- {dataset: ATLASZHIGHMASS49FB, cfac: [QCD]}
-- {dataset: CMSDY1D12, cfac: ['QCD', 'EWK']}
-- {dataset: CMS_HMDY_13TEV, cfac: ['QCD', 'EWK']}
+- {dataset: ATLASDY2D8TEV, cfac: [QCDEWK], simu_fac: "EFT_LO"}
+- {dataset: CMSDY2D11, cfac: [QCD], simu_fac: "EFT_LO"}
+- {dataset: ATLASZHIGHMASS49FB, cfac: [QCD], simu_fac: "EFT_LO"}
+- {dataset: CMSDY1D12, cfac: ['QCD', 'EWK'], simu_fac: "EFT_LO"}
+- {dataset: CMS_HMDY_13TEV, cfac: ['QCD', 'EWK'], simu_fac: "EFT_LO"}
  #ttbar
 # - {dataset: ATLASTTBARTOT7TEV, cfac: [QCD], simu_fac: "EFT_NLO"}
 # - {dataset: ATLASTTBARTOT8TEV, cfac: [QCD], simu_fac: "EFT_NLO"} 
@@ -221,13 +221,13 @@ simu_parameters:
 # - {name: 'OQt8', scale: 0.01, initialisation: {type: analytic}}
 # - {name: 'Ott1', scale: 0.01, initialisation: {type: analytic}}
 # 4 Fermions 2L2Q
-# - {name: 'Oeu', scale: 0.01, initialisation: {type: analytic}}
-# - {name: 'Olu', scale: 0.01, initialisation: {type: analytic}}
-# - {name: 'Oed', scale: 0.01, initialisation: {type: analytic}}
+# - {name: 'Oeu', scale: 0.01, initialisation: {type: analytic}} #To do list
+# - {name: 'Olu', scale: 0.01, initialisation: {type: analytic}} #To do list
+# - {name: 'Oed', scale: 0.01, initialisation: {type: analytic}} #To do list
 - {name: 'Olq3', scale: 0.01, initialisation: {type: analytic}} #BETA
 - {name: 'Olq1', scale: 0.01, initialisation: {type: analytic}}
-# - {name: 'Oqe', scale: 0.01, initialisation: {type: analytic}}
-# - {name: 'Old', scale: 0.01, initialisation: {type: analytic}}
+# - {name: 'Oqe', scale: 0.01, initialisation: {type: analytic}} #To do list
+# - {name: 'Old', scale: 0.01, initialisation: {type: analytic}} #To do list
 # 4 Fermions 4L
 - {name: 'Oll', scale: 1.0, initialisation: {type: analytic}} #BETA
 # Yukawa
@@ -248,7 +248,7 @@ simu_parameters:
 # New Beta
 - {name: 'Opud', scale: 1.0, initialisation: {type: analytic}} #BETA
 - {name: 'OulS', scale: 1.0, initialisation: {type: analytic}} #BETA
-# - {name: 'OdlS', scale: 1.0, initialisation: {type: analytic}} #BETA
+# - {name: 'OdlS', scale: 1.0, initialisation: {type: analytic}} #To do list
 - {name: 'OulT', scale: 1.0, initialisation: {type: analytic}} #BETA
 
 ############################################################
