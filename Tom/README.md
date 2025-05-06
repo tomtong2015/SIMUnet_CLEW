@@ -19,12 +19,12 @@ Here we briefly describe what's going on in Tom's low-energy YAML files.
 
 - **EFT_LO: SM**: *(The SM predictions have been normalised to 1)*
 - **SM_fixed**: *(These numbers are experimental central values divided by their normalised SM predictions)*
-- **theory_cov**: *(This is the experimental covariance matrix)*
+- **theory_cov**: *(This is the theory-experimental-combined covariance matrix)*
 
 ---
 
 ## Exceptions
 
-- **SIMU_MESON_2.yaml**: *(The SM predictions have **NOT** been normalised)*
+- **SIMU_MESON_2.yaml**: *(The SM predictions have **NOT** been normalised, because one of them is zero)*
 
 ---
