@@ -25,6 +25,6 @@ Here we briefly describe what's going on in Tom's low-energy YAML files.
 
 ## Exceptions
 
-- **SIMU_MESON_2.yaml**: *(The SM predictions have **NOT** been normalised)*
+- **SIMU_MESON_2.yaml**: *(The SM predictions have **NOT** been normalised, because one of them is zero)*
 
 ---
