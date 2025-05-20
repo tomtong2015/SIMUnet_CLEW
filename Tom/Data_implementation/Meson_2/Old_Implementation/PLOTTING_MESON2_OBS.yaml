@@ -1,0 +1,4 @@
+
+dataset_label: "Meson 2 Observables"
+experiment: Meson
+nnpdf31_process: DIBOSON

@@ -1,0 +1,21 @@
+metadata:
+  ref: 2311.00021
+  author: Tom Tong
+  ufomodel: SMEFTatLO
+  flavour: U35RH
+  date: 05/05/2025
+  pdf: None
+  info_SM_fixed: PDG review
+  observable: Ke3  K_mu3  K_mu3_shape
+  bins: []
+
+SM_fixed: [0.216335, 0.21652, 0.00035]
+
+EFT_LO:
+  SM: [0.217041, 0.217041, 0.0]
+  O3pl: [-0.0132285, -0.0132285, 0.0]
+  O3pq: [0.0706051, 0.0706051, 0.0]
+  Oll:  [0.0132285, 0.0132285, 0.0]
+  Olq3: [0.0587934, 0.0587934, 0.0]
+  Opud: [0.0293967, 0.0293967, 0.0]
+  OulT: [0.0, 0.0, -0.0755583]
