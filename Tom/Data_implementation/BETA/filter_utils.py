@@ -60,7 +60,7 @@ def get_uncertainties():
     """
     returns the uncertainties.
     """
-    covmat_path = 'rawdata/covmat.yaml'
+    covmat_path = 'rawdata/rawdata.yaml'
 
     uncertainties = []
 
