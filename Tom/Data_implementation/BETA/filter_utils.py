@@ -43,8 +43,9 @@ def get_kinematics():
     values_string = input['central_vals']
     values =  [float(val.strip()) for val in values_string.split(",")]
     num_of_bins = len(values)
-
-    for i in range(num_of_bins):
+    
+    # These have beem set to dummy values as they aren't relevant for the current dataset.
+    for i in range(num_of_bins): 
         kin_value = {
             'abs_eta': {'min': None, 'mid': 1 ,'max': None},
             'm_W2': {'min': None, 'mid': 1, 'max': None},
@@ -69,6 +70,7 @@ def get_uncertainties():
         data = yaml.safe_load(file)
 
     stats = []
+    # Get the statistical uncertainties from the diagonal covariance matrix.
     for row in data['experimental_cov']:
         for value in row:
             if value !=0:
@@ -76,7 +78,7 @@ def get_uncertainties():
                 stats.append(unc)
    
     uncertainties.append([{"name": 'stat', "values": stats}])
-    uncertainties.append([{"name": 'dummy', "values": np.zeros(len(stats))}])
+    uncertainties.append([{"name": 'dummy', "values": np.zeros(len(stats))}]) # Adding a dummy systematic
     print(uncertainties)
     return uncertainties
 
