@@ -15,11 +15,20 @@ Here we briefly describe what's going on in Tom's low-energy YAML files.
 
 ---
 
+## Contents
+
+- **SIMU_BETA_DECAYS.yaml**: *(Beta-decay observables)*
+- **SIMU_MESON_1.yaml**: *(Most of the meson-decay observables)*
+- **SIMU_MESON_2.yaml**: *(K_e3 and K_mu3)*
+- **SIMU_PV.yaml**: *(Parity-violation observables)*
+
+---
+
 ## Details
 
-- **EFT_LO: SM**: *(The SM predictions have been normalised to 1)*
-- **SM_fixed**: *(These numbers are experimental central values divided by their normalised SM predictions)*
+- **SM_fixed**: *(These numbers are experimental central values divided by their SM predictions)*
 - **theory_cov**: *(This is the theory-experimental-combined covariance matrix)*
+- **EFT_LO: SM**: *(The SM predictions have been normalised to 1)*
 
 ---
 
