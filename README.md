@@ -4,6 +4,11 @@
 
 [![DOI](Pending)](Pending)
 
+# CLEW Fits
+
+- Beta decay, Meson decay and PV datasets: https://vp.nnpdf.science/gb_obWQDTN64o9bpjBffOw==/
+
+
 # SIMUnet: Leveraging open-source machine learning to explore the interplay between parton distribution functions and potential new physics
 
 [PBSP](https://www.pbsp.org.uk/) (Physics Beyond the Standard Proton) is an ERC funded project, led by Prof. Maria Ubiali and based at the Department of Applied Mathematics and Theoretical Physics at the University of Cambridge. The projects focuses on the global interpretation of the LHC data in terms of indirect searches for new physics, by providing a robust framework to globally interpret all subtle deviations from the SM predictions that might arise at colliders.
