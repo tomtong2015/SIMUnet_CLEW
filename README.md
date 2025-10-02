@@ -9,6 +9,9 @@
 - Beta decay, Meson decay and PV datasets: https://vp.nnpdf.science/gb_obWQDTN64o9bpjBffOw==/
 - Beta decay, Meson decay and PV datasets with the scale on Clq3 and Clq1 set to 1: https://vp.nnpdf.science/uBW3WWplTu2hhv3rJLu6Vw==/
 - Beta decay, Meson decay and PV datasets with the scale on Clq3 and Clq1 set to 1 compare with the same fit inlcuding HMDY projections: https://vp.nnpdf.science/c2URAkPUQ2m-FxKltYzLBA==/
+- 1000 Replicas of the fit with Beta decay, Meson decay and PV datasets with the scale on Clq3 and Clq1 set to 1 compare with the reference fit (no LE datasets): https://vp.nnpdf.science/oEzLRBsSQ_WbOMUjgCPf1A==/
+
+
 # SIMUnet: Leveraging open-source machine learning to explore the interplay between parton distribution functions and potential new physics
 
 [PBSP](https://www.pbsp.org.uk/) (Physics Beyond the Standard Proton) is an ERC funded project, led by Prof. Maria Ubiali and based at the Department of Applied Mathematics and Theoretical Physics at the University of Cambridge. The projects focuses on the global interpretation of the LHC data in terms of indirect searches for new physics, by providing a robust framework to globally interpret all subtle deviations from the SM predictions that might arise at colliders.
