@@ -10,7 +10,7 @@
 - Beta decay, Meson decay and PV datasets with the scale on Clq3 and Clq1 set to 1: https://vp.nnpdf.science/uBW3WWplTu2hhv3rJLu6Vw==/
 - Beta decay, Meson decay and PV datasets with the scale on Clq3 and Clq1 set to 1 compare with the same fit inlcuding HMDY projections: https://vp.nnpdf.science/c2URAkPUQ2m-FxKltYzLBA==/
 - 1000 Replicas of the fit with Beta decay, Meson decay and PV datasets with the scale on Clq3 and Clq1 set to 1 compare with the reference fit (no LE datasets): https://vp.nnpdf.science/oEzLRBsSQ_WbOMUjgCPf1A==/
-
+- 000 Replicas of the fit with Beta decay, Meson decay and PV datasets with the scale on Clq3 and Clq1 set to 1 (Fixed PDF) vs 100 replicas (Simu Fit): https://vp.nnpdf.science/5i1S4PewRZGa3tX6P1smXA==/
 
 # SIMUnet: Leveraging open-source machine learning to explore the interplay between parton distribution functions and potential new physics
 
