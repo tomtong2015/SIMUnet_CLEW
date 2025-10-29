@@ -40,20 +40,20 @@ Here we briefly describe what's going on in Tom's low-energy YAML files.
 
 # CLEW Fits
 
-| Fit Name                        | Beta | Meson | PV  | HMDY Projections | Simu/Fixed-PDF |
-|---------------------------------|------|-------|-----|-----------------|----------------|
-| Reference_fit                    | ❌    | ❌     | ❌   | ❌               | Fixed-PDF      |
-| Meson_BETA_PV_New_scale          | ✅    | ✅     | ✅   | ❌               | Fixed-PDF      |
-| Meson_BETA_PV_HMDY               | ✅    | ✅     | ✅   | ✅               | Fixed-PDF      |
-| 20250930_ec_simu_low_energy      | ✅    | ✅     | ✅   | ❌               | Simu           |
-| 20251006_ec_simu_low_energy_ref  | ❌    | ❌     | ❌   | ❌               | Simu           |
+| Fit Name                        | Beta | Meson | PV  | HMDY Projections | Simu/Fixed-PDF | Replicas |
+|---------------------------------|------|-------|-----|-----------------|----------------|----------|
+| Reference_fit                    | ❌    | ❌     | ❌   | ❌               | Fixed-PDF      | 1000     |
+| Meson_BETA_PV_New_scale          | ✅    | ✅     | ✅   | ❌               | Fixed-PDF      |1000     |
+| Meson_BETA_PV_HMDY               | ✅    | ✅     | ✅   | ✅               | Fixed-PDF      |1000     |
+| 20250930_ec_simu_low_energy      | ✅    | ✅     | ✅   | ❌               | Simu           |100      |
+| 20251006_ec_simu_low_energy_ref  | ❌    | ❌     | ❌   | ❌               | Simu           |100      |
 
 ## Fits in progress:
 
-| Fit Name                        | Beta | Meson | PV  | HMDY Projections | Simu/Fixed-PDF |
-|---------------------------------|------|-------|-----|-----------------|----------------|
-| ?  | ❌     | ❌     | ❌   |         ✅       | Fixed          |
-| ?  | ✅    | ✅     | ✅   |         ✅       | Simu           |
+| Fit Name                        | Beta | Meson | PV  | HMDY Projections | Simu/Fixed-PDF | Replicas |
+|---------------------------------|------|-------|-----|-----------------|----------------|----------|
+| 20251029_ec_fixed_ref_HMDY  | ❌     | ❌     | ❌   |         ✅       | Fixed          | 100     |
+| 20251029_ec_simu_LE_HMDY  | ✅    | ✅     | ✅   |         ✅       | Simu           | 100    |
 
 ## Reports
 
