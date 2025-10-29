@@ -48,9 +48,14 @@ Here we briefly describe what's going on in Tom's low-energy YAML files.
 | 20250930_ec_simu_low_energy      | ✅    | ✅     | ✅   | ❌               | Simu           |
 | 20251006_ec_simu_low_energy_ref  | ❌    | ❌     | ❌   | ❌               | Simu           |
 
+## Fits in progress:
 
+| Fit Name                        | Beta | Meson | PV  | HMDY Projections | Simu/Fixed-PDF |
+|---------------------------------|------|-------|-----|-----------------|----------------|
+| ?  | ❌     | ❌     | ❌   |         ✅       | Fixed          |
+| ?  | ✅    | ✅     | ✅   |         ✅       | Simu           |
 
-
+## Reports
 
 - Beta decay, Meson decay and PV datasets: https://vp.nnpdf.science/gb_obWQDTN64o9bpjBffOw==/
 - Beta decay, Meson decay and PV datasets with the scale on Clq3 and Clq1 set to 1: https://vp.nnpdf.science/uBW3WWplTu2hhv3rJLu6Vw==/
