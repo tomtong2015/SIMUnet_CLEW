@@ -40,6 +40,18 @@ Here we briefly describe what's going on in Tom's low-energy YAML files.
 
 # CLEW Fits
 
+| Fit Name                        | Beta | Meson | PV  | HMDY Projections | Simu/Fixed-PDF |
+|---------------------------------|------|-------|-----|-----------------|----------------|
+| Reference_fit                    | ❌    | ❌     | ❌   | ❌               | Fixed-PDF      |
+| Meson_BETA_PV_New_scale          | ✅    | ✅     | ✅   | ❌               | Fixed-PDF      |
+| Meson_BETA_PV_HMDY               | ✅    | ✅     | ✅   | ✅               | Fixed-PDF      |
+| 20250930_ec_simu_low_energy      | ✅    | ✅     | ✅   | ❌               | Simu           |
+| 20251006_ec_simu_low_energy_ref  | ❌    | ❌     | ❌   | ❌               | Simu           |
+
+
+
+
+
 - Beta decay, Meson decay and PV datasets: https://vp.nnpdf.science/gb_obWQDTN64o9bpjBffOw==/
 - Beta decay, Meson decay and PV datasets with the scale on Clq3 and Clq1 set to 1: https://vp.nnpdf.science/uBW3WWplTu2hhv3rJLu6Vw==/
 - Beta decay, Meson decay and PV datasets with the scale on Clq3 and Clq1 set to 1 compare with the same fit inlcuding HMDY projections: https://vp.nnpdf.science/c2URAkPUQ2m-FxKltYzLBA==/
