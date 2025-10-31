@@ -44,7 +44,7 @@ Here we briefly describe what's going on in Tom's low-energy YAML files.
 |---------------------------------|------|-------|-----|-----------------|----------------|----------|
 | Reference_fit                    | ❌    | ❌     | ❌   | ❌               | Fixed-PDF      | 1000     |
 | Meson_BETA_PV_New_scale          | ✅    | ✅     | ✅   | ❌               | Fixed-PDF      |1000     |
-| Meson_BETA_PV_HMDY               | ✅    | ✅     | ✅   | ✅               | Fixed-PDF      |1000     |
+| Meson_BETA_PV_HMDY               | ✅    | ✅     | ✅   | ✅               | Fixed-PDF      |100  |
 | 20250930_ec_simu_low_energy      | ✅    | ✅     | ✅   | ❌               | Simu           |100      |
 | 20251006_ec_simu_low_energy_ref  | ❌    | ❌     | ❌   | ❌               | Simu           |100      |
 
