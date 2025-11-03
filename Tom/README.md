@@ -47,14 +47,14 @@ Number | Fit Name                        | Beta | Meson | PV  | HMDY Projections
 |3| Meson_BETA_PV_HMDY               | ✅    | ✅     | ✅   | ✅               | Fixed-PDF      |100  ||
 |4| 20250930_ec_simu_low_energy      | ✅    | ✅     | ✅   | ❌               | Simu           |100      ||
 |5| 20251006_ec_simu_low_energy_ref  | ❌    | ❌     | ❌   | ❌               | Simu           |100      ||
-|6| 20251029_ec_fixed_ref_HMDY  | ❌     | ❌     | ❌   |         ✅       | Fixed          | 100     | Scale on Clq3 and Clq1 set to 0.01 |
-|7| 20251029_ec_simu_LE_HMDY  | ✅    | ✅     | ✅   |         ✅       | Simu           | 100    ||
+|6| 20251029_ec_simu_LE_HMDY  | ✅    | ✅     | ✅   |         ✅       | Simu           | 100    ||
+|7| 20251103_ec_fixed_ref_HMDY_new_scale | ❌    | ❌     | ❌   |         ✅       | Fixed          | 100    | Scale on Clq3 and Clq1 set to 1.0 |
 
-## Fits in progress:
+## Old fits:
 
 | Fit Name                        | Beta | Meson | PV  | HMDY Projections | Simu/Fixed-PDF | Replicas | Notes |
 |---------------------------------|------|-------|-----|-----------------|----------------|----------|----|
-| 20251103_ec_fixed_ref_HMDY_new_scale | ❌    | ❌     | ❌   |         ✅       | Fixed          | 100    | Scale on Clq3 and Clq1 set to 1.0 |
+|8| 20251029_ec_fixed_ref_HMDY  | ❌     | ❌     | ❌   |         ✅       | Fixed          | 100     | Scale on Clq3 and Clq1 set to 0.01 |
 
 ## Reports
 
@@ -64,4 +64,5 @@ Number | Fit Name                        | Beta | Meson | PV  | HMDY Projections
 - **2 vs 1** - 1000 Replicas of the fit with Beta decay, Meson decay and PV datasets with the scale on Clq3 and Clq1 set to 1 compare with the reference fit (no LE datasets): https:// vp.nnpdf.science/oEzLRBsSQ_WbOMUjgCPf1A==/
 - **2 vs 4** - 1000 Replicas of the fit with Beta decay, Meson decay and PV datasets with the scale on Clq3 and Clq1 set to 1 (Fixed PDF) vs 100 replicas (Simu Fit): https://vp.nnpdf.science/5i1S4PewRZGa3tX6P1smXA==/
 - **4 vs 5** - 100 Replicas of the fit with Beta decay, Meson decay and PV datasets with the scale on Clq3 and Clq1 set to 1 (Simu) compare with the reference fit (no LE datasets): https://vp.nnpdf.science/D-CyYUZ5Qk-1Gcf2tINIlw==
-- **6 vs 3** - Reference + HMDY (scale 0.01 on clq1 and clq3) vs LE + HMDY: https://vp.nnpdf.science/I2799oQFQd6I1qZoluOyWQ==/ (Going to repeat this with scale 1.0)
+- **8 vs 3** - Reference + HMDY (scale 0.01 on clq1 and clq3) vs LE + HMDY: https://vp.nnpdf.science/I2799oQFQd6I1qZoluOyWQ==/ (Going to repeat this with scale 1.0)
+- **7 vs 3** - https://vp.nnpdf.science/DVMAcJTRRK2Pu0CxdjlOcQ==/
