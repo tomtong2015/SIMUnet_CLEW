@@ -1139,7 +1139,7 @@ def plot_2d_bsm_facs_fits_seaborn(fits, bsm_names_to_latex):
 
                 # 2D histogram (density plot)
                 kde = sns.kdeplot(
-                    x=x, y=y, fill=True, ax=ax, alpha=0.6, levels=50, label=fit.label
+                    x=x, y=y, fill=True, ax=ax, alpha=0.5, levels=50, label=fit.label, thresh=0.011
                 )
 
                 sns.kdeplot(
@@ -1147,7 +1147,7 @@ def plot_2d_bsm_facs_fits_seaborn(fits, bsm_names_to_latex):
                     y=y,
                     fill=False,
                     ax=ax,
-                    levels=[0.05, 0.32, 0.9],
+                    levels = [0.011, 0.135, 0.607],  # 1σ, 2σ, 3σ
                     linewidths=1.5,
                     label=fit.label,
                 )
@@ -1179,96 +1179,6 @@ def plot_2d_bsm_facs_fits_seaborn(fits, bsm_names_to_latex):
         )
 
         ax.legend(handles=legend_handles, labels=legend_labels)
-        ax.set_axisbelow(True)
-
-        yield fig
-
-
-@figuregen
-def plot_2d_bsm_facs_fits_density(fits, bsm_names_to_latex):
-    """
-    Generate 2D scatter plots and histograms comparing BSM factor values across different fits.
-
-    This function takes a set of fits and compares the BSM factors between them. For each pair
-    of BSM factors, it creates a 2D scatter plot with corresponding histograms on the x and y axes.
-
-    Parameters
-    ----------
-    fits : NSList
-        List of FitSpec to be compared.
-    bsm_names_to_latex : dict
-        Dictionary mapping BSM factor names to their LaTeX string representations.
-
-    Yields
-    ------
-    fig : matplotlib.figure.Figure
-        The matplotlib figure object for each pair of BSM factors.
-    """
-    # extract all operators in the fits
-    all_ops = []
-    for fit in fits:
-        paths = replica_paths(fit)
-        bsm_facs_df = read_bsm_facs(paths)
-        bsm_fac_ops = bsm_facs_df.columns.tolist()
-        all_ops.append(bsm_fac_ops)
-    # Remove repeated operators
-    all_ops = {o for fit_ops in all_ops for o in fit_ops}
-    # get all pairs
-    pairs = itertools.combinations(all_ops, 2)
-    # plot all pairs of operators
-
-    pair = next(pairs)
-    # for pair in pairs:
-    op_1, op_2 = pair
-    # use this size to keep them sqaure
-    fig, ax = plt.subplots(1, 1, figsize=(5, 5))
-    ax.ticklabel_format(axis="both", scilimits=(0, 0), style="sci", useOffset=True)
-
-    divider = make_axes_locatable(ax)
-    # append axes to the top and to the right for the histograms
-    ax_histx = divider.append_axes("top", 0.5, pad=0.5, sharex=ax)
-    ax_histy = divider.append_axes("right", 0.5, pad=0.3, sharey=ax)
-
-    # Make some labels invisible
-    ax_histx.xaxis.set_tick_params(labelbottom=False)
-    ax_histy.yaxis.set_tick_params(labelleft=False)
-    prop_cycle = plt.rcParams["axes.prop_cycle"]
-    colors = prop_cycle.by_key()["color"]
-    # color_cycle = itertools.cycle(colors)
-    for fit in fits:
-        paths = replica_paths(fit)
-        bsm_facs_df = read_bsm_facs(paths)
-        # display the result in the figure only if the fit has the two operators in the pair
-        if op_1 in bsm_facs_df and op_2 in bsm_facs_df:
-            x = bsm_facs_df[op_1].values
-            y = bsm_facs_df[op_2].values
-
-            # 2D histogram (density plot)
-            sns.kdeplot(x=x, y=y, fill=True, ax=ax, alpha=0.6, levels=50)
-
-            sns.kdeplot(
-                x=x, y=y, fill=False, ax=ax, levels=[0.05, 0.32, 0.9], linewidths=1.5
-            )
-
-            # populate the histograms
-            ax_histx.hist(bsm_facs_df.get([op_1]), alpha=0.5, density=True)
-            ax_histy.hist(
-                bsm_facs_df.get([op_2]),
-                orientation="horizontal",
-                alpha=0.5,
-                density=True,
-            )
-
-        ax_histx.grid(False)
-        ax_histy.grid(False)
-
-        ax.set_xlabel(
-            bsm_names_to_latex[op_1] + r"$/\Lambda^2$ [TeV$^{-2}]$", fontsize=14
-        )
-        ax.set_ylabel(
-            bsm_names_to_latex[op_2] + r"$/\Lambda^2$ [TeV$^{-2}]$", fontsize=14
-        )
-        ax.legend()
         ax.set_axisbelow(True)
 
         yield fig
