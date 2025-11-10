@@ -42,19 +42,20 @@ Here we briefly describe what's going on in Tom's low-energy YAML files.
 
 Number | Fit Name                        | Beta | Meson | PV  | HMDY Projections | Simu/Fixed-PDF | Replicas | Notes |
 |-----|---------------------------------|------|-------|-----|-----------------|----------------|----------|----|
-|1| Reference_fit                    | ❌    | ❌     | ❌   | ❌               | Fixed-PDF      | 1000     ||
 |2| Meson_BETA_PV_New_scale          | ✅    | ✅     | ✅   | ❌               | Fixed-PDF      |1000     ||
 |3| Meson_BETA_PV_HMDY               | ✅    | ✅     | ✅   | ✅               | Fixed-PDF      |100  ||
 |4| 20250930_ec_simu_low_energy      | ✅    | ✅     | ✅   | ❌               | Simu           |100      ||
 |5| 20251006_ec_simu_low_energy_ref  | ❌    | ❌     | ❌   | ❌               | Simu           |100      ||
 |6| 20251029_ec_simu_LE_HMDY  | ✅    | ✅     | ✅   |         ✅       | Simu           | 100    ||
 |7| 20251103_ec_fixed_ref_HMDY_new_scale | ❌    | ❌     | ❌   |         ✅       | Fixed          | 100    | Scale on Clq3 and Clq1 set to 1.0 |
+|9| Reference_fit_new_scale                    | ❌    | ❌     | ❌   | ❌               | Fixed-PDF      | 1000     | Scale on Clq3 and Clq1 set to 1.0 |
 
 ## Old fits:
 
 | Fit Name                        | Beta | Meson | PV  | HMDY Projections | Simu/Fixed-PDF | Replicas | Notes |
 |---------------------------------|------|-------|-----|-----------------|----------------|----------|----|
 |8| 20251029_ec_fixed_ref_HMDY  | ❌     | ❌     | ❌   |         ✅       | Fixed          | 100     | Scale on Clq3 and Clq1 set to 0.01 |
+|1| Reference_fit                    | ❌    | ❌     | ❌   | ❌               | Fixed-PDF      | 1000     |Scale on Clq3 and Clq1 set to 0.01 |
 
 ## Reports
 
