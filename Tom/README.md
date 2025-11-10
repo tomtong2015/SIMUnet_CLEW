@@ -62,7 +62,7 @@ Number | Fit Name                        | Beta | Meson | PV  | HMDY Projections
 - Beta decay, Meson decay and PV datasets: https://vp.nnpdf.science/gb_obWQDTN64o9bpjBffOw==/
 - Beta decay, Meson decay and PV datasets with the scale on Clq3 and Clq1 set to 1: https://vp.nnpdf.science/uBW3WWplTu2hhv3rJLu6Vw==/
 - **2 vs 3** - Beta decay, Meson decay and PV datasets with the scale on Clq3 and Clq1 set to 1 compare with the same fit inlcuding HMDY projections: https://vp.nnpdf.science/c2URAkPUQ2m-FxKltYzLBA==/
-- **2 vs 1** - 1000 Replicas of the fit with Beta decay, Meson decay and PV datasets with the scale on Clq3 and Clq1 set to 1 compare with the reference fit (no LE datasets): https:// vp.nnpdf.science/oEzLRBsSQ_WbOMUjgCPf1A==/
+- **2 vs 1** - 1000 Replicas of the fit with Beta decay, Meson decay and PV datasets with the scale on Clq3 and Clq1 set to 1 compare with the reference fit (no LE datasets): [https:// vp.nnpdf.science/oEzLRBsSQ_WbOMUjgCPf1A==/](https://vp.nnpdf.science/LMG0lqNiQeqVB_tindgykA==/)
 - **2 vs 4** - 1000 Replicas of the fit with Beta decay, Meson decay and PV datasets with the scale on Clq3 and Clq1 set to 1 (Fixed PDF) vs 100 replicas (Simu Fit): https://vp.nnpdf.science/5i1S4PewRZGa3tX6P1smXA==/
 - **4 vs 5** - 100 Replicas of the fit with Beta decay, Meson decay and PV datasets with the scale on Clq3 and Clq1 set to 1 (Simu) compare with the reference fit (no LE datasets): https://vp.nnpdf.science/D-CyYUZ5Qk-1Gcf2tINIlw==
 - **8 vs 3** - Reference + HMDY (scale 0.01 on clq1 and clq3) vs LE + HMDY: https://vp.nnpdf.science/I2799oQFQd6I1qZoluOyWQ==/ (Going to repeat this with scale 1.0)
