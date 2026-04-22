@@ -71,66 +71,14 @@ def display_format(series):
     """
     return [format_number(x, digits=2) for x in series]
 
-
-BSM_FAC_DISPLAY = [
-    "OtZ",
-    "OtW",
-    "OtG",
-    "Opt",
-    "O3pQ3",
-    "O3pq",
-    "OpQM",
-    "OpqMi",
-    "Opui",
-    "Opdi",
-    "O3pl",
-    "Opl",
-    "Ope",
-    "O1qd",
-    "O1qu",
-    "O1dt",
-    "O1qt",
-    "O1ut",
-    "O11qq",
-    "O13qq",
-    "O8qd",
-    "O8qu",
-    "O8dt",
-    "O8qt",
-    "O8ut",
-    "O81qq",
-    "O83qq",
-    "OQt8",
-    "OQQ1",
-    "OQQ8",
-    "OQt1",
-    "Ott1",
-    "Oeu",
-    "Olu",
-    "Oed",
-    "Olq3",
-    "Olq1",
-    "Oqe",
-    "Old",
-    "Oll",
-    "Omup",
-    "Otap",
-    "Otp",
-    "Obp",
-    "Ocp",
-    "OG",
-    "OWWW",
-    "OpG",
-    "OpW",
-    "OpB",
-    "OpWB",
-    "Opd",
-    "OpD",
-    "Opud",
-    "OulS",
-    "OulT",
-]
-
+BSM_FAC_DISPLAY = ['OtZ', 'OtW', 'OtG', 
+'Opt', 'O3pQ3', 'O3pq', 'OpQM', 'OpqMi', 'Opui', 'Opdi', 'O3pl', 'Opl', 'Ope',
+'O1qd', 'O1qu', 'O1dt', 'O1qt', 'O1ut', 'O11qq', 'O13qq',
+'O8qd', 'O8qu', 'O8dt', 'O8qt', 'O8ut', 'O81qq', 'O83qq',
+'OQt8', 'OQQ1', 'OQQ8', 'OQt1', 'Ott1', 'Oeu', 'Olu', 'Oed',
+'Olq3', 'Olq1', 'Oqe', 'Old', 'Oll',  'Omup', 'Otap', 'Otp',
+'Obp', 'Ocp', 'OG', 'OWWW', 'OpG', 'OpW', 'OpB', 'OpWB', 'Opd', 'OpD',
+'Opud', 'OulS', 'OulT']
 
 def reorder_cols(cols):
     """
@@ -2185,6 +2133,23 @@ def fisher_information_by_sector(
         A DataFrame with the normalized diagonal elements of the Fisher information matrices,
         indexed by simulation parameters and with sectors as columns.
     """
+    for i in range(0, 5):
+        dataset_inputs[i].bsm_sector = "DY"
+
+    for i in range(5, 9):
+        dataset_inputs[i].bsm_sector = "EWPO"
+
+    for i in range(9, 14):
+        dataset_inputs[i].bsm_sector = "Higgs"
+
+    for i in range(14, 22):
+        dataset_inputs[i].bsm_sector = "DIBOS"
+
+    for i in range(22,23):
+        dataset_inputs[i].bsm_sector = "BETA"
+
+    for i in range(23,25):
+        dataset_inputs[i].bsm_sector = "MESON"
 
     # First, get the names of the BSM sectors.
 
