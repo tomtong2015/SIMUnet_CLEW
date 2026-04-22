@@ -20,9 +20,15 @@ SM_K_FAC_DIR="$TARGET_DIR/theory_270/cfactor"
 if [ -d "old_commondata" ]; then
   echo "Found commondata directory. Copying files..."
 
-  cp old_commondata/DATA_* "$COMMONDATA_DIR"
-  cp old_commondata/PLOTTING* "$COMMONDATA_DIR"
-  cp old_commondata/SYSTYPE_* "$SYSTYPE_DIR"
+  for dir in old_commondata/*/; do
+    dataset=$(basename "$dir")
+    echo "Processing dataset: $dataset"
+
+    cp "$dir"DATA_* "$COMMONDATA_DIR" 2>/dev/null
+    cp "$dir"PLOTTING* "$COMMONDATA_DIR" 2>/dev/null
+    cp "$dir"SYSTYPE_* "$SYSTYPE_DIR" 2>/dev/null
+  done
+
 else
   echo "No commondata directory found. Skipping..."
 fi
