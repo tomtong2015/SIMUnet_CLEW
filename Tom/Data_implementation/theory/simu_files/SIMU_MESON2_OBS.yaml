@@ -9,7 +9,7 @@ metadata:
   observable: Ke3  K_mu3  K_mu3_shape
   bins: []
 
-SM_fixed: [0.216335, 0.21652, 0.00035]
+SM_fixed: [0.217041, 0.217041, 0.0000001]
 
 EFT_LO:
   SM: [0.217041, 0.217041, 0.0000001]

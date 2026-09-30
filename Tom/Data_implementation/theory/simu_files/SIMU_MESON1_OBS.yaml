@@ -9,7 +9,7 @@ metadata:
   observable: Lambda_decay  R_pi  R_K  R_mu  K_mu2  pi_e3  epsilon_S
   bins: []
 
-SM_fixed: [0.997222, 0.999352, 1.00444, 1.01484, 1.01255, 0.996426, 0.970872]
+SM_fixed: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
 
 EFT_LO:
   SM: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
